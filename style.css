@@ -222,8 +222,7 @@ nav .logo img {
 
 .about {
 	width: 100vw;
-	height: 100vh;
-	padding: 2rem;
+	padding: 8rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -238,7 +237,7 @@ nav .logo img {
 	color: #212325;
 	font-weight: 600;
 	letter-spacing: 0.1rem;
-	margin: 2rem 0;
+	margin-bottom: 1.5rem;
 }
 
 .section-title::before {
@@ -253,22 +252,27 @@ nav .logo img {
 }
 
 .about p {
-	max-width: 80rem;
+	max-width: 75rem;
 	font-family: 'Sora', sans-serif;
 	font-size: 3rem;
 	font-weight: 500;
 	line-height: 1.25;
-	color: #212325;;
+	color: #212325;
+}
+
+.about p > span {
+	color: #d61b22;
+	font-weight: 600;
+	letter-spacing: 0.03em;
 }
 
 .showcase {
 	padding: 3rem;
-	width: 100vw;
-	height: 100vh;
 }
 
 hr {
 	border-top: 1px solid #c0bebb;
+	margin-bottom: 2rem;
 }
 
 .showcase .title {
@@ -290,7 +294,7 @@ hr {
 	font-family: 'Sora', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
-	color: #212325;;
+	color: #212325;
 }
 
 .bento-container {
