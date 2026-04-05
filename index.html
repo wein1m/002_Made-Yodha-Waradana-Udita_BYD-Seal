@@ -8,220 +8,223 @@
   </head>
 
   <body>
-    <!-- 🐰 ======= NAVBAR ======= 🐰 -->
-    <nav>
-      <div class="logo">
-        <img src="public/logo.png" />
-      </div>
-
-      <div class="navs">
-        <ul>
-          <li>About</li>
-          <li>Technology</li>
-          <li>Sustainability</li>
-          <li>Models</li>
-          <li>Explore</li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- 🐰 ======= HERO SECTION ======= 🐰 -->
-    <section class="hero">
-      <div class="hero-image">
-        <img src="public/hero.png" />
-        <div class="hero-overlay"></div>
-      </div>
-
-      <div class="hero-content">
-        <div class="left">
-          <div class="top">
-            <h1 class="hero-title">Where Innovation Meets Motion</h1>
-            <p class="hero-sub">
-              Meet BYD Seal. where advanced technology, dynamic performance, and
-              sustainable design come together.
-            </p>
-          </div>
-
-          <div class="bottom">
-            <div class="play-btn"></div>
-            <div class="overlay"></div>
-            <video src="public/video.mp4"></video>
-          </div>
+    <div id="scroll-container">
+      <!-- 🐰 ======= NAVBAR ======= 🐰 -->
+      <nav>
+        <div class="logo">
+          <img src="public/logo.png" />
         </div>
-
-        <div class="right">
-          <div class="hero-cta">
-            <svg
-              width="75"
-              height="75"
-              viewBox="0 0 75 75"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m26.789 48.278 21.553 -21.556m0 0H27.986m20.357 0v20.358"
-                stroke="#e7e6e5"
-                stroke-width="3.308823529411765"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+        <div class="navs">
+          <ul>
+            <li>About</li>
+            <li>Technology</li>
+            <li>Sustainability</li>
+            <li>Models</li>
+            <li>Explore</li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2 class="section-title">About BYD Seal</h2>
-      <p>
-        We bring electric innovation to life through precision engineering and
-        intelligent design. Recognized with the
-        <span>iF Design Award 2023</span>, trusted by drivers who demand
-        performance, efficiency, and refined comfort.
-      </p>
-    </section>
-
-    <section class="exterior-design">
-      <hr />
-      <span class="section-title">BYD Seal Exterior Design</span>
-
-      <div class="title">
-        <h2>Ocean Aesthetics Design</h2>
-        <p>
-          The front of the BYD Seal follows the X design concept, paired with a
-          dynamic and flowing waistline that reflects its ocean-inspired
-          aesthetic. Every curve is carefully shaped to enhance both
-          aerodynamics and visual elegance, creating a seamless balance between
-          performance and style.
-        </p>
-      </div>
-
-      <div>
-        <img src="public/exterior-design.png" />
-      </div>
-    </section>
-
-    <section class="interior-design">
-      <hr />
-      <span class="section-title">BYD Seal Interior Design</span>
-
-      <div class="title">
-        <h2>Crafted for Every Moment Inside</h2>
-        <p>
-          Step inside the BYD Seal and experience a cabin shaped by innovation
-          and comfort. A signature rotatable touchscreen adapts to your needs,
-          while the panoramic sunroof fills the space with natural light.
-          Integrated sport seats provide support and elegance, complemented by
-          smart storage that keeps everything in place. Together, these elements
-          create a refined and immersive driving experience.
-        </p>
-      </div>
-
-      <div class="bento-container">
-        <img class="bento-item" src="public/panoramic_sunroof.webp" />
-        <img class="bento-item" src="public/integrated_sport_seats.webp" />
-        <img class="bento-item" src="public/smart_storage.webp" />
-        <img class="bento-item" src="public/rotatable-touchscreen.png" />
-      </div>
-    </section>
-
-    <section class="dark">
-      <section class="carousel">
-        <span class="section-title">Technology</span>
-        <h2>Next-Generation Technology</h2>
-        <div class="buttons">
-          <!-- backward btn -->
-          <button class="btn prev-btn">
-            <svg
-              class="svg-btn"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="currentColor"
-                d="m15.057 4.22-7.213 7.232a.75.75 0 0 0 0 1.06l7.25 7.268a.75.75 0 0 0 1.062-1.06l-6.721-6.739 6.684-6.701a.75.75 0 0 0-1.062-1.06"
-              ></path>
-            </svg>
-          </button>
-          <!-- forward btn -->
-          <button class="btn next-btn">
-            <svg
-              class="svg-btn"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="currentColor"
-                d="m8.943 19.78 7.213-7.232a.75.75 0 0 0 0-1.06L8.906 4.22a.75.75 0 0 0-1.062 1.06l6.721 6.739-6.684 6.701a.75.75 0 0 0 1.062 1.06"
-              ></path>
-            </svg>
-          </button>
+      </nav>
+      <!-- 🐰 ======= HERO SECTION ======= 🐰 -->
+      <section class="hero">
+        <div class="hero-image">
+          <img src="public/hero.png" />
+          <div class="hero-overlay"></div>
         </div>
-        <div class="carousel-wrapper">
-          <div class="carousel-item">
-            <video
-              src="public/ITAC.mp4"
-              webkit-playsinline=""
-              playsinline=""
-              muted=""
-              autoplay=""
-              loop=""
-            ></video>
-            <h3>iTAC System</h3>
-            <p>
-              Real-time torque control that enhances stability, minimizes
-              skidding, and delivers smoother, more precise handling.
-            </p>
+        <div class="hero-content">
+          <div class="left">
+            <div class="top">
+              <h1 class="hero-title">Where Innovation Meets Motion</h1>
+              <p class="hero-sub">
+                Meet BYD Seal. where advanced technology, dynamic performance,
+                and sustainable design come together.
+              </p>
+            </div>
+            <div class="bottom">
+              <div class="play-btn"></div>
+              <div class="overlay"></div>
+              <video src="public/video.mp4"></video>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="public/ePlatform.png" />
-            <h3>e-Platform 3.0</h3>
-            <p>
-              A next-generation EV platform engineered for greater safety,
-              efficiency, and intelligent driving performance.
-            </p>
-          </div>
-          <div class="carousel-item">
-            <img src="public/ctb.png" />
-            <h3>CTB Technology</h3>
-            <p>
-              Cell-to-body integration that boosts structural strength and
-              transforms the battery into a core part of the vehicle.
-            </p>
-          </div>
-          <div class="carousel-item">
-            <img src="public/blade-battery.png" />
-            <h3>Blade Battery</h3>
-            <p>
-              Ultra-safe battery technology, rigorously tested to perform
-              reliably under extreme conditions.
-            </p>
-          </div>
-          <div class="carousel-item">
-            <img src="public/electric-powertrain.png" />
-            <h3>8-in-1 Electric Powertrain</h3>
-            <p>
-              Fully integrated system combining key components to maximize
-              efficiency, performance, and space utilization.
-            </p>
+          <div class="right">
+            <div class="hero-cta">
+              <svg
+                width="75"
+                height="75"
+                viewBox="0 0 75 75"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m26.789 48.278 21.553 -21.556m0 0H27.986m20.357 0v20.358"
+                  stroke="#e7e6e5"
+                  stroke-width="3.308823529411765"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </section>
-
-      <section class="charging">
-        <img src="public/charging.png" />
-        <div class="content">
-          <h2>Effortless Charging, Anywhere</h2>
+      <!-- 🐰 ======= ABOUT SECTION ======= 🐰 -->
+      <section class="about">
+        <h2 class="section-title">About BYD Seal</h2>
+        <p>
+          We bring electric innovation to life through precision engineering and
+          intelligent design. Recognized with the
+          <span>iF Design Award 2023</span>, trusted by drivers who demand
+          performance, efficiency, and refined comfort.
+        </p>
+      </section>
+      <!-- 🐰 ======= EXTERIOR SECTION ======= 🐰 -->
+      <section class="exterior-design">
+        <hr />
+        <span class="section-title">BYD Seal Exterior Design</span>
+        <div class="title">
+          <h2>Ocean Aesthetics Design</h2>
           <p>
-            Fast Charging Capability Charge from 30% to 80% in just 26 minutes
-            with high-power DC charging, or conveniently recharge at home with
-            AC support.
+            The front of the BYD Seal follows the X design concept, paired with
+            a dynamic and flowing waistline that reflects its ocean-inspired
+            aesthetic. Every curve is carefully shaped to enhance both
+            aerodynamics and visual elegance, creating a seamless balance
+            between performance and style.
           </p>
         </div>
+        <div>
+          <img src="public/exterior-design.png" />
+        </div>
       </section>
-    </section>
+      <!-- 🐰 ======= DESIGN SECTION ======= 🐰 -->
+      <section class="interior-design">
+        <hr />
+        <span class="section-title">BYD Seal Interior Design</span>
+        <div class="title">
+          <h2>Crafted for Every Moment Inside</h2>
+          <p>
+            Step inside the BYD Seal and experience a cabin shaped by innovation
+            and comfort. A signature rotatable touchscreen adapts to your needs,
+            while the panoramic sunroof fills the space with natural light.
+            Integrated sport seats provide support and elegance, complemented by
+            smart storage that keeps everything in place. Together, these
+            elements create a refined and immersive driving experience.
+          </p>
+        </div>
+        <div class="bento-container">
+          <img class="bento-item" src="public/panoramic_sunroof.webp" />
+          <img class="bento-item" src="public/integrated_sport_seats.webp" />
+          <img class="bento-item" src="public/smart_storage.webp" />
+          <img class="bento-item" src="public/rotatable-touchscreen.png" />
+        </div>
+      </section>
 
+      <!-- 🐰 ======= DARK MODE ~ SECTION ======= 🐰 -->
+      <section class="dark">
+      <!-- 🐰 ======= TECHNOLOGY SECTION ======= 🐰 -->
+        <section class="carousel">
+          <span class="section-title">Technology</span>
+          <h2>Next-Generation Technology</h2>
+          <div class="buttons">
+            <!-- backward btn -->
+            <button class="btn prev-btn">
+              <svg
+                class="svg-btn"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="m15.057 4.22-7.213 7.232a.75.75 0 0 0 0 1.06l7.25 7.268a.75.75 0 0 0 1.062-1.06l-6.721-6.739 6.684-6.701a.75.75 0 0 0-1.062-1.06"
+                ></path>
+              </svg>
+            </button>
+            <!-- forward btn -->
+            <button class="btn next-btn">
+              <svg
+                class="svg-btn"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="m8.943 19.78 7.213-7.232a.75.75 0 0 0 0-1.06L8.906 4.22a.75.75 0 0 0-1.062 1.06l6.721 6.739-6.684 6.701a.75.75 0 0 0 1.062 1.06"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="carousel-wrapper">
+            <div class="carousel-item">
+              <video
+                src="public/ITAC.mp4"
+                webkit-playsinline=""
+                playsinline=""
+                muted=""
+                autoplay=""
+                loop=""
+              ></video>
+              <h3>iTAC System</h3>
+              <p>
+                Real-time torque control that enhances stability, minimizes
+                skidding, and delivers smoother, more precise handling.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="public/ePlatform.png" />
+              <h3>e-Platform 3.0</h3>
+              <p>
+                A next-generation EV platform engineered for greater safety,
+                efficiency, and intelligent driving performance.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="public/ctb.png" />
+              <h3>CTB Technology</h3>
+              <p>
+                Cell-to-body integration that boosts structural strength and
+                transforms the battery into a core part of the vehicle.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="public/blade-battery.png" />
+              <h3>Blade Battery</h3>
+              <p>
+                Ultra-safe battery technology, rigorously tested to perform
+                reliably under extreme conditions.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <img src="public/electric-powertrain.png" />
+              <h3>8-in-1 Electric Powertrain</h3>
+              <p>
+                Fully integrated system combining key components to maximize
+                efficiency, performance, and space utilization.
+              </p>
+            </div>
+          </div>
+        </section>
+      <!-- 🐰 ======= CHARGING SECTION ======= 🐰 -->
+        <section class="charging">
+          <img src="public/charging.png" />
+          <div class="content">
+            <h2>Effortless Charging, Anywhere</h2>
+            <p>
+              Fast Charging Capability Charge from 30% to 80% in just 26 minutes
+              with high-power DC charging, or conveniently recharge at home with
+              AC support.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <p>
+          &copy; 2024 BYD. All rights reserved. BYD and the BYD logo are
+          trademarks of BYD Company Ltd. in certain jurisdictions. All other
+          trademarks are the property of their respective owners.
+        </p>
+      </footer>
+    </div>
 
     <script src="carousel.js"></script>
+    <script src="smooth_scroll.js"></script>
   </body>
 </html>
