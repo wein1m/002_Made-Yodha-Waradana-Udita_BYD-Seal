@@ -5,239 +5,239 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 html {
-	scrollbar-width: none;
-	-ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 html::webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 body {
-	font-family: "Sora", sans-serif;
-	background-color: #e8e5e2;
-	color: #060606;
+  font-family: "Sora", sans-serif;
+  background-color: #e8e5e2;
+  color: #060606;
 }
 
 .hero {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	padding: 2rem;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
 }
 
 .hero-image {
-	position: absolute;
-	inset: 1.5rem;
-	z-index: -1;
+  position: absolute;
+  inset: 1.5rem;
+  z-index: -1;
 }
 
 .hero-overlay {
-	position: absolute;
-	background-image: linear-gradient(to bottom, #00000020, transparent);
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 1.5rem;
+  position: absolute;
+  background-image: linear-gradient(to bottom, #00000020, transparent);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
 }
 
 .hero-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
 }
 
 .hero-content {
-	display: flex;
-	height: 100%;
-	padding: 2rem;
+  display: flex;
+  height: 100%;
+  padding: 2rem;
 }
 
 .hero-content .left {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .hero-content .left .top {
-	margin-top: 5.5rem;
+  margin-top: 5.5rem;
 }
 
 .hero-title {
-	color: #e7e6e5;
-	font-family: "Archivo", sans-serif;
-	text-transform: uppercase;
-	font-size: 3.75rem;
-	font-weight: 500;
-	letter-spacing: -0.025rem;
-	line-height: 1;
+  color: #e7e6e5;
+  font-family: "Archivo", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+  line-height: 1;
 }
 
 .hero-sub {
-	color: #e7e6e5;
-	margin-top: 1rem;
-	width: 30rem;
-	font-size: 1.5rem;
-	line-height: 1.25;
+  color: #e7e6e5;
+  margin-top: 1rem;
+  width: 30rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
 }
 
 .hero-content .right {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: end;
-	width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 50%;
 }
 
 .hero-cta {
-	font-family: "Sora", sans-serif;
-	color: #e7e6e5;
-	font-weight: 500;
-	font-size: 1.5rem;
-	background-color: #060606;
-	padding: 1.5rem 2rem;
-	border-radius: 0.75rem;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
+  font-family: "Sora", sans-serif;
+  color: #e7e6e5;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: #060606;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .hero-cta svg {
-	margin-left: -1rem;
+  margin-left: -1rem;
 }
 
 .hero-cta::before {
-	content: "Learn More";
-	max-width: 0;
-	overflow: hidden;
-	white-space: nowrap;
-	transition: max-width 500ms;
-	margin-right: 1rem;
+  content: "Learn More";
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 500ms;
+  margin-right: 1rem;
 }
 
 .hero-cta:hover::before {
-	max-width: 200px;
+  max-width: 200px;
 }
 
 .hero-cta svg {
-	margin-left: -1rem;
-	transition: margin-left 300ms;
+  margin-left: -1rem;
+  transition: margin-left 300ms;
 }
 
 .hero-cta:hover svg {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 .hero-content .left .bottom {
-	position: relative;
-	width: 384px;
-	height: 216px;
+  position: relative;
+  width: 384px;
+  height: 216px;
 }
 
 .hero-content .play-btn {
-	position: absolute;
-	inset: 0;
-	place-self: center;
-	width: 0;
-	height: 0;
-	border-top: 12px solid transparent;
-	border-bottom: 12px solid transparent;
-	border-left: 22px solid #e7e6e5;
-	transform: scale(1.5);
+  position: absolute;
+  inset: 0;
+  place-self: center;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 22px solid #e7e6e5;
+  transform: scale(1.5);
 }
 
 .hero-content .bottom .overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #00000030;
-	inset: 0;
-	border-radius: 1.5rem;
-	z-index: 1;
-	transition: background-color 300ms;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000030;
+  inset: 0;
+  border-radius: 1.5rem;
+  z-index: 1;
+  transition: background-color 300ms;
 }
 
 .hero-content .bottom .overlay:hover {
-	background-color: #00000010;
-	cursor: pointer;
+  background-color: #00000010;
+  cursor: pointer;
 }
 
 .hero-content video {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 1.5rem;
 }
 
 nav {
-	position: fixed;
-	inset: 3rem;
-	height: fit-content;
-	z-index: 999;
-	display: flex;
-	justify-content: space-between;
+  position: fixed;
+  inset: 3rem;
+  height: fit-content;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav .logo {
-	width: fit-content;
-	height: fit-content;
-	padding: 1rem;
-	background-color: #e7e6e590;
-	backdrop-filter: blur(40px);
-	-webkit-backdrop-filter: blur(40px);
-	border-radius: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  background-color: #e7e6e590;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 0.5rem;
 }
 
 nav .logo img {
-	width: 100px;
-	height: 20px;
+  width: 100px;
+  height: 20px;
 }
 
 .navs {
-	width: fit-content;
-	height: fit-content;
-	background-color: #e7e6e590;
-	backdrop-filter: blur(40px);
-	-webkit-backdrop-filter: blur(40px);
-	border-radius: 0.5rem;
-	padding: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: #e7e6e590;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .navs ul {
-	display: flex;
-	flex-direction: row;
-	gap: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
 }
 
 .navs li {
-	font-size: 1.125rem;
-	letter-spacing: 0.025rem;
-	font-family: "Sora", sans-serif;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.025rem;
+  font-family: "Sora", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
 .about {
-	width: 100vw;
-	padding: 8rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	flex: 0 0 100%;
+  width: 100vw;
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 100%;
 }
 
 .section-title {
-	font-family: 'Sora', sans-serif;
-	font-size: 1rem;
-	color: #212325;
-	font-weight: 600;
-	letter-spacing: 0.1rem;
-	margin-bottom: 1.5rem;
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  color: #212325;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-title::before {
@@ -270,7 +270,7 @@ nav .logo img {
 	padding: 3rem;
 }
 
-hr {
+.showcase hr {
 	border-top: 1px solid #c0bebb;
 	margin-bottom: 2rem;
 }
@@ -318,4 +318,87 @@ hr {
 	grid-column: 3;
 	grid-row: 1/span 2;
 	width: 100%;
+}
+
+.carousel {
+	margin-top: 10rem;
+	padding: 3rem;
+	display: flex;
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.carousel h2 {
+	font-family: 'Sora', sans-serif;
+	font-weight: 500;
+	font-size: 3rem;
+	max-width: 30rem;
+	line-height: 1.25;
+	margin-top: 5rem;
+	margin-bottom: -5rem;
+}
+
+.carousel-wrapper {
+	display: flex;
+	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	gap: 3rem;
+	padding-bottom: 2rem;
+	scrollbar-width: thin;
+	scrollbar-color: #060606;
+}
+
+.carousel-item {
+	scroll-snap-align: center;
+	min-width: 825px;
+	max-width: 825px;
+}
+
+.carousel-item video,
+.carousel-item img {
+	min-width: 825px;
+	max-width: 825px;
+	max-height: 500px;
+	min-height: 500px;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.carousel-item h3 {
+	font-family: 'Sora', sans-serif;
+	font-weight: 500;
+	font-size: 2.25em;
+	margin-top: 1rem;
+}
+
+.carousel-item p {
+	font-family: 'Sora', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #212325;
+}
+
+.buttons {
+	display: flex;
+	justify-content: end;
+}
+
+.btn {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+	z-index: 100;
+}
+
+.svg-btn {
+	width: 30px;
+	height: 30px;
 }
