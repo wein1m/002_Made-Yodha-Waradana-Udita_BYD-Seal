@@ -10,8 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
     const currScroll = wrapper.scrollLeft;
 
-    console.log("max scroll:", maxScroll);
-
     // the '10' is for tolerance (cuz the scroll pos may not be exact)
     if (currScroll <= 10) {
       prevBtn.style.opacity = "0.5";
@@ -25,12 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   prevBtn.addEventListener("click", () => {
     wrapper.scrollBy({ left: -itemWidth, behavior: "smooth" });
-    console.log("current scroll position:", wrapper.scrollLeft);
   });
 
   nextBtn.addEventListener("click", () => {
     wrapper.scrollBy({ left: itemWidth, behavior: "smooth" });
-    console.log("current scroll position:", wrapper.scrollLeft);
   });
 
   wrapper.addEventListener("scroll", validate);
