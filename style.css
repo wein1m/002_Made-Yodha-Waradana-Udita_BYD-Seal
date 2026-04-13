@@ -4,15 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
-html {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-html::webkit-scrollbar {
-    display: none;
-}
-
 #scroll-container {
   position: fixed;
   top: 0;
@@ -513,36 +504,126 @@ nav .logo img {
     font-family: 'Sora', sans-serif;
     font-size: 1.25rem;
     color: #060606;
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.25rem;
     margin-top: 0.5rem;
     font-weight: 500;
     letter-spacing: -0.025rem;
 }
 
-.vehicle-cta a {
+.vehicle-cta .content div {
+    display: flex;
+}
+.vehicle-cta .btn-wrapper {
+    width: 200px;
     font-family: "Sora", sans-serif;
     color: #e7e6e5;
     font-weight: 500;
     font-size: 1rem;
     background-color: #060606;
     border: 3px solid #060606;
-    padding: 0.75rem 3.25rem;
+    padding: 0.75rem 0;
     border-radius: 0.5rem;
-    width: fit-content;
     margin: 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.vehicle-cta div a:last-child {
+.vehicle-cta .btn-wrapper:last-child {
     background-color: white;
     color: #060606;
     border-color: white;
 }
 
-
-.footer {
-    background-color: #222;
-    color: white;
-    width: 100%;
-    height: 100vh;
+.subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 2rem 6rem;
 }
 
+.subscribe h5 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.subscribe > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    width: 75%;
+}
+
+.subscribe .form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid gray;
+    margin-bottom: 1rem;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.form input::placeholder {
+    color: gray;
+}
+
+.form input:focus {
+    outline: none;
+    border: 2px solid gray;
+}
+
+.form div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form .asterisk {
+    color: red;
+}
+
+.form button {
+    padding: 0;
+    margin-left: 1rem;
+    width: fit-content;
+    font-family: "Sora", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: black;
+    padding: 0.75rem 3.25rem;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+    font-size: 1rem;
+    padding: 2rem;
+    font-size: 0.75rem;
+}
+
+footer a {
+    color: #dcdcdc
+}
+
+footer a:hover {
+    color: white;
+}
