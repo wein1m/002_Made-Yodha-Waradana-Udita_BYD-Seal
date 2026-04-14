@@ -19,6 +19,10 @@ body {
     color: #060606;
 }
 
+::selection {
+    background-color: #bdb29660;
+}
+
 .hero {
     position: relative;
     width: 100vw;
@@ -251,6 +255,31 @@ nav.scrolled .navs {
     flex: 0 0 100%;
 }
 
+.about p {
+    max-width: 75rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #212325;
+}
+
+.about p  > span {
+    color: #d61b22;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 2rem;
+    }
+
+    .about p {
+        font-size: 1.25rem;
+    }
+}
+
 .section-title {
     font-family: "Sora", sans-serif;
     font-size: 1rem;
@@ -271,19 +300,18 @@ nav.scrolled .navs {
     margin-top: 2rem;
 }
 
-.about p {
-    max-width: 75rem;
-    font-family: 'Sora', sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 1.25;
-    color: #212325;
-}
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 0.75rem;
+        letter-spacing: 0.075rem;
+        margin-bottom: 1rem;
+    }
 
-.about p  > span {
-    color: #d61b22;
-    font-weight: 600;
-    letter-spacing: 0.03em;
+    .section-title::before {
+        width: 6px;
+        height: 6px;
+        margin-right: 0.75rem;
+    }
 }
 
 .exterior-design img {
@@ -327,6 +355,39 @@ nav.scrolled .navs {
     color: #212325;
 }
 
+@media (max-width: 480px) {
+    .exterior-design img {
+        border-radius: 1rem;
+    }
+
+    .interior-design,
+    .exterior-design {
+        padding: 2rem;
+    }
+
+    .interior-design hr,
+    .exterior-design hr {
+        margin-bottom: 0.5rem;
+    }
+
+    .interior-design .title,
+    .exterior-design .title {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .interior-design h2,
+    .exterior-design h2 {
+        font-size: 1.75rem;
+        max-width: none;
+    }
+
+    .interior-design p,
+    .exterior-design p {
+        font-size: 0.875rem;
+    }
+}
 
 .bento-container {
     display: grid;
@@ -349,6 +410,37 @@ nav.scrolled .navs {
     grid-column: 3;
     grid-row: 1/span 2;
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    .bento-item {
+        border-radius: 1rem;
+    }
+
+    .bento-container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .bento-item:nth-child(4) {
+        grid-row: 1/span 3;
+        grid-column: 1/span 2;
+    }
+
+    .bento-item:nth-child(1) {
+        grid-row: 4/span 2;
+        grid-column: 1;
+    }
+
+    .bento-item:nth-child(2) {
+        grid-row: 4/span 2;
+        grid-column: 2;
+    }
+
+    .bento-item:nth-child(3) {
+        display: none;
+    }
 }
 
 .dark {
