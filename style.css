@@ -619,7 +619,7 @@ nav.scrolled li {
 
 .charging p {
     max-width: 70rem;
-    font-family: 'Sora', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 1.15rem;
     line-height: 1.5;
     color: #dddad7;
@@ -631,6 +631,26 @@ nav.scrolled li {
     height: 100%;
     object-fit: cover;
     border-radius: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .charging .content {
+        margin-left: 0;
+    }
+
+    .charging h2 {
+        font-size: 1.75rem;
+    }
+
+    .charging p {
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+    }
+
+    .charging img {
+        width: 100%;
+        height: 180px;
+    }
 }
 
 .vehicle-cta {
