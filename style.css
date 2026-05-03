@@ -164,11 +164,6 @@ body {
     transition: background-color 300ms;
 }
 
-.hero-content .bottom .overlay:hover {
-    background-color: #00000010;
-    cursor: pointer;
-}
-
 .hero-content video {
     width: 100%;
     height: 100%;
@@ -559,6 +554,46 @@ nav.scrolled li {
 .svg-btn {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 480px) {
+    .dark {
+        padding: 6rem 2rem;
+    }
+
+    .carousel {
+        gap: 1rem;
+    }
+
+    .carousel h2 {
+        margin-top: -0.25rem;
+        font-size: 1.75rem;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-item video,
+    .carousel-item img {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 220px;
+        max-height: 220px;
+    }
+
+    .carousel-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.875rem;
+    }
+
+    .buttons {
+        margin-top: 2.5rem;
+    }
 }
 
 .charging {
