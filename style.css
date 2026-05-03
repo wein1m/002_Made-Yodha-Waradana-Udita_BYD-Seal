@@ -326,7 +326,7 @@ nav.scrolled li {
 
 .interior-design,
 .exterior-design {
-    padding: 3rem;
+    padding: 5rem 3rem;
 }
 
 .interior-design hr,
@@ -450,7 +450,7 @@ nav.scrolled li {
 
 .dark {
     background-color: #222;
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 8rem 3rem;
 }
 
@@ -558,6 +558,7 @@ nav.scrolled li {
 
 @media (max-width: 480px) {
     .dark {
+        margin-top: 6rem;
         padding: 6rem 2rem;
     }
 
