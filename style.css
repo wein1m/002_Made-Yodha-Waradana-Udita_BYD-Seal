@@ -26,11 +26,15 @@ body {
 .hero {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     padding: 2rem;
 }
 
 .hero-image {
+    background-image: url("/public/hero.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem;
     position: absolute;
     inset: 1.5rem;
     z-index: -1;
@@ -43,13 +47,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 1.5rem;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 1.5rem;
 }
 
@@ -109,10 +106,6 @@ body {
     cursor: pointer;
 }
 
-.hero-cta svg {
-    margin-left: -1rem;
-}
-
 .hero-cta::before {
     content: "Learn More";
     max-width: 0;
@@ -169,6 +162,69 @@ body {
     height: 100%;
     object-fit: contain;
     border-radius: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0.875rem;
+    }
+
+    .hero-image {
+        inset: 0.875rem;
+        background-image: url('/public/hero_mobile.jpeg');
+    }
+
+    .hero-content {
+        padding: 1.5em;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .hero-content .left,
+    .hero-content .right {
+        width: 100%;
+    }
+
+    .hero-content .left .bottom {
+        display: none;
+    }
+
+    .hero-content .right {
+        align-items: start;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .hero-sub {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        font-size: 1rem;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .hero-cta svg {
+        transform: scale(0.4);
+        margin-left: 0;
+        margin: -2rem;
+    }
+
+    .hero-cta:hover svg {
+        margin: -2rem;
+    }
+
+    .hero-cta::before {
+        max-width: 200px;
+        margin-right: 2rem;
+    }
 }
 
 nav {
@@ -247,6 +303,12 @@ nav.scrolled .navs {
 nav.scrolled li {
     font-weight: 500;
     font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: none;
+    }
 }
 
 .about {
