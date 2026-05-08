@@ -231,6 +231,21 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    .hero-content .left .bottom {
+        display: none;
+    }
+
+    .hero-content .left {
+        justify-content: end;
+        width: 66.66%;
+    }
+
+    .hero-content .right {
+        width: 33.33%;
+    }
+}
+
 nav {
     position: fixed;
     inset: 3rem;
