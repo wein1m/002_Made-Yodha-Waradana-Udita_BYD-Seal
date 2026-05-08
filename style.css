@@ -689,7 +689,6 @@ nav.scrolled li {
         margin-right: 0.75rem;
     }
 }
-}
 
 .exterior-design img {
     border-radius: 1.5rem;
@@ -766,7 +765,53 @@ nav.scrolled li {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 728px) and (min-width: 420px) {
+    .interior-design img,
+    .exterior-design img {
+        border-radius: 0.75rem;
+    }
+
+    .interior-design,
+    .exterior-design {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .interior-design hr {
+        display: none;
+    }
+
+    .exterior-design hr {
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+    }
+
+    .interior-design .title,
+    .exterior-design .title {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .interior-design h2,
+    .exterior-design h2 {
+        max-width: none;
+        font-size: 2.5rem;
+        line-height: 1.15;
+    }
+
+    .interior-design p,
+    .exterior-design p {
+        max-width: none;
+    }
+
+    .interior-design .section-title,
+    .exterior-design .section-title {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 728px) {
     .interior-design img,
     .exterior-design img {
         border-radius: 1rem;
@@ -833,7 +878,7 @@ nav.scrolled li {
     width: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 728px) {
     .bento-item {
         border-radius: 1rem;
     }
