@@ -872,6 +872,34 @@ nav.scrolled li {
     }
 }
 
+@media (max-width: 1024px) and (min-width: 480px) {
+    .dark {
+        margin-top: 6rem;
+    }
+
+    .carousel h2 {
+        margin-top: -0.5rem;
+        font-size: 3.5rem;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-item video,
+    .carousel-item img {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 420px;
+        max-height: 420px;
+    }
+
+    .buttons {
+        margin-top: 2.5rem;
+    }
+}
+
 .charging {
     margin-top: 5rem;
     width: 100%;
