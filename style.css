@@ -389,10 +389,89 @@ nav.scrolled li {
     font-size: 1rem;
 }
 
+.navs-mobile.open {
+    background-color: #e8e5e2;
+    position: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+.navs-mobile ul {
+    font-size: 2.75rem;
+    letter-spacing: 0.025em;
+}
+
+.navs-mobile li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.navs-mobile li:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #060606;
+    border-radius: 999px;
+    margin-right: 1rem;
+}
+
+.navs-mobile .newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navs-mobile .newsletter .title span:first-child {
+    border-left: none;
+    padding: 0;
+    padding-right: 0.5rem;
+    color: #060606;
+}
+
+.navs-mobile .newsletter .title span {
+    color: #06060680;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    border-left: 1px solid #06060640;
+    padding: 0 0.5rem;
+}
+
+.navs-mobile .newsletter input {
+    margin-top: 0.5rem;
+    border: 2px solid #06060640;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.75rem;
+}
+
+.navs-mobile .newsletter input:focus {
+    border-color: #06060670;
+    outline: none;
+}
+
+.navs-mobile .newsletter button {
+    margin-top: 0.5rem;
+    background-color: #060606;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+}
+
 @media (max-width: 480px) {
     nav {
         inset: 1.5rem;
-        /* inset: 2.375rem; */
     }
 
     nav .logo {
@@ -448,85 +527,62 @@ nav.scrolled li {
     nav.scrolled .navs-mobile-hamburg a {
         display: none;
     }
+}
 
-    .navs-mobile.open {
-        background-color: #e8e5e2;
-        position: fixed;
-        width: 100dvw;
-        height: 100dvh;
-        top: 0;
-        left: 0;
-        z-index: 98;
+@media (min-width: 480px) and (max-width: 728px) {
+    nav .logo img {
+        width: 80px;
+        height: 16px;
+    }
+
+    .navs {
+        display: none;
+    }
+
+    .navs-mobile-hamburg {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
-        padding: 2rem;
-        padding-top: 8rem;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.325rem;
+        align-items: center;
+    }
+
+    .navs-mobile-hamburg svg {
+        width: auto;
+        height: 2.5rem;
+    }
+    .navs-mobile-hamburg a {
+        font-size: 1rem;
+        white-space: nowwrap;
+        background-color: rgb(141, 141, 141, 0.3);
+        font-weight: 500;
+        color: #060606;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    nav.scrolled .navs-mobile-hamburg,
+    nav.scrolled .logo {
+        padding: 0;
+    }
+
+    nav.scrolled .navs-mobile-hamburg {
+        background-color: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    nav.scrolled .navs-mobile-hamburg a {
+        display: none;
     }
 
     .navs-mobile ul {
-        font-size: 2.75rem;
-        letter-spacing: 0.025em;
-    }
-
-    .navs-mobile li {
-        display: flex;
-        align-items: center;
-        margin: 0.5rem 0;
+        font-size: 3.75rem;
     }
 
     .navs-mobile li:first-child::before {
-        content: "";
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background-color: #060606;
-        border-radius: 999px;
-        margin-right: 1rem;
-    }
-
-    .navs-mobile .newsletter {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navs-mobile .newsletter .title span:first-child {
-        border-left: none;
-        padding: 0;
-        padding-right: 0.5rem;
-        color: #060606;
-    }
-
-    .navs-mobile .newsletter .title span {
-        color: #06060680;
-        font-size: 0.75rem;
-        letter-spacing: 0.05em;
-        border-left: 1px solid #06060640;
-        padding: 0 0.5rem;
-    }
-
-    .navs-mobile .newsletter input {
-        margin-top: 0.5rem;
-        border: 2px solid #06060640;
-        border-radius: 0.5rem;
-        width: 100%;
-        padding: 0.75rem;
-    }
-
-    .navs-mobile .newsletter input:focus {
-        border-color: #06060670;
-        outline: none;
-    }
-
-    .navs-mobile .newsletter button {
-        margin-top: 0.5rem;
-        background-color: #060606;
-        color: white;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1.5rem;
-        width: 100%;
+        width: 12px;
+        height: 12px;
     }
 }
 
