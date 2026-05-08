@@ -676,6 +676,21 @@ nav.scrolled li {
     }
 }
 
+@media (max-width: 728px) and (min-width: 480px) {
+    .section-title {
+        font-size: 0.75rem;
+        letter-spacing: 0.075rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title::before {
+        width: 6px;
+        height: 6px;
+        margin-right: 0.75rem;
+    }
+}
+}
+
 .exterior-design img {
     border-radius: 1.5rem;
     width: auto;
