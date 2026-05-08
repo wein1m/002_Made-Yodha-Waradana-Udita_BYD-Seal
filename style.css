@@ -1263,7 +1263,7 @@ nav.scrolled li {
     border-color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 728px) {
     .vehicle-cta {
         background-image: url("/public/vehicle-cta-bg_mobile.png");
         height: 80vh;
@@ -1409,7 +1409,51 @@ nav.scrolled li {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 728px) and (min-width: 480px) {
+    .subscribe {
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem;
+    }
+
+    .subscribe p {
+        opacity: 90%;
+        max-width: 80vw;
+        font-size: 0.75rem;
+    }
+
+    .subscribe .form {
+        margin-top: 0.5rem;
+        margin-left: -0.5rem;
+        flex-direction: row;
+        height: 3.25rem;
+    }
+
+    .subscribe input {
+        width: 50vw;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .subscribe .right {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .subscribe button {
+        height: 100%;
+        margin-left: 0.5rem;
+    }
+
+    .form div {
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 728px) {
     .subscribe {
         flex-direction: column;
         align-items: start;
@@ -1490,5 +1534,20 @@ footer div {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
+    }
+}
+
+@media (max-width: 728px) and (min-width: 480px) {
+    footer {
+        padding: 1rem;
+        font-size: 0.75rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 }
