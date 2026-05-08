@@ -68,7 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.scrollBy({ left: itemWidth, behavior: "smooth" });
 
     if (currSlide == maxItems) {
-      setTimeout(() => wrapper.scrollTo({ left: 0, behavior: "smooth" }), delay);
+      setTimeout(
+        () => wrapper.scrollTo({ left: 0, behavior: "smooth" }),
+        delay,
+      );
     }
   };
 

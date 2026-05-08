@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       btn.innerHTML = closeSVG;
       document.body.style.overflow = "hidden";
-    }
-    else {
+    } else {
       logo.style.backgroundColor = "";
       hamburgWrapper.style.backgroundColor = "";
       cta.style.display = "";
