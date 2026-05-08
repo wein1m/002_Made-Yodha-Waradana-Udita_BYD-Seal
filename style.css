@@ -1058,7 +1058,36 @@ nav.scrolled li {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 728px) and (min-width: 480px) {
+    .dark {
+        margin-top: 6rem;
+    }
+
+    .carousel h2 {
+        margin-top: -0.5rem;
+        font-size: 3.5rem;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-item video,
+    .carousel-item img {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+    .buttons {
+        margin-top: 2.5rem;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 728px) {
     .dark {
         margin-top: 6rem;
     }
