@@ -231,7 +231,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 480px) {
     .hero-content .left .bottom {
         display: none;
     }
@@ -510,7 +510,7 @@ nav.scrolled li {
     }
 }
 
-@media (width >= 1024px) {
+@media (max-width: 1024px) and (min-width: 480px) {
     .about {
         padding: 6rem;
     }
