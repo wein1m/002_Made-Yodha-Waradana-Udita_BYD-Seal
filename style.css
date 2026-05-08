@@ -231,7 +231,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 728px) {
     .hero-content .left .bottom {
         display: none;
     }
@@ -243,6 +243,62 @@ body {
 
     .hero-content .right {
         width: 33.33%;
+    }
+}
+
+@media (max-width: 728px) and (min-width: 480px) {
+    .hero-image {
+        background-image: url('/public/hero_mobile.jpeg');
+    }
+
+    .hero-content {
+        gap: 2.5rem;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .hero-content .left,
+    .hero-content .right {
+        width: 100%;
+    }
+
+    .hero-content .left .bottom {
+        display: none;
+    }
+
+    .hero-content .right {
+        align-items: start;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .hero-sub {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        font-size: 1rem;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .hero-cta svg {
+        transform: scale(0.4);
+        margin-left: 0;
+        margin: -2rem;
+    }
+
+    .hero-cta:hover svg {
+        margin: -2rem;
+    }
+
+    .hero-cta::before {
+        max-width: 200px;
+        margin-right: 2rem;
     }
 }
 
@@ -372,7 +428,7 @@ nav.scrolled li {
         white-space: nowrap;
         background-color: rgb(141, 141, 141, 0.3);
         font-weight: 500;
-        color: black;
+        color: #060606;
         padding: 0.5rem;
         border-radius: 0.5rem;
     }
@@ -579,7 +635,7 @@ nav.scrolled li {
 
 .interior-design h2,
 .exterior-design h2 {
-    font-family: 'Sora', sans-serif;
+    nfont-family: 'Sora', sans-serif;
     font-weight: 500;
     font-size: 3rem;
     max-width: 30rem;
@@ -641,9 +697,13 @@ nav.scrolled li {
         flex-direction: column-reverse;
     }
 
-    .interior-design hr,
-    .exterior-design hr {
+    .interior-design hr {
         display: none;
+    }
+
+    .exterior-design hr {
+        margin-top: 3rem;
+        margin-bottom: -2rem;
     }
 
     .interior-design .title,
