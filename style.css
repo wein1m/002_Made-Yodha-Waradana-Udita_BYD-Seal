@@ -629,6 +629,46 @@ nav.scrolled li {
     }
 }
 
+@media (max-width: 1024px) and (min-width: 480px) {
+    .interior-design img,
+    .exterior-design img {
+        border-radius: 1rem;
+    }
+
+    .interior-design,
+    .exterior-design {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .interior-design hr,
+    .exterior-design hr {
+        display: none;
+    }
+
+    .interior-design .title,
+    .exterior-design .title {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .interior-design h2,
+    .exterior-design h2 {
+        max-width: none;
+    }
+
+    .interior-design p,
+    .exterior-design p {
+        max-width: none;
+    }
+
+    .interior-design .section-title,
+    .exterior-design .section-title {
+        display: none;
+    }
+}
+
 .bento-container {
     display: grid;
     grid-template-columns: 1fr 1fr 2.23fr;
