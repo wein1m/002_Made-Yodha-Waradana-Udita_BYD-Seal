@@ -12,10 +12,10 @@ A clean and responsive BYD Seal concept redesign made fully from scratch using p
 
 Made for Web Design competition hosted by Fasttekno 2026.
 
+More screenshots of the website are available in [`previews/`](./previews) btw!
 
 ## 🌐 Live Demo
-🐰 https://byd-seal.netlify.app
-
+🐰 [https://byd-seal.netlify.app](https://wein1m.github.io/Made-Yodha-Waradana-Udita_SMK-TI-Global-DPS_BYD-Seal/)
 
 ## Identitas Diri
 - Nama Peserta: Made Yodha Waradana Udita
@@ -47,9 +47,33 @@ Made for Web Design competition hosted by Fasttekno 2026.
 ```
 
 ## How to Run?
-
 Clone the repository:
 
 ```sh
-git clone https://github.com/wein1m/byd-seal.git
+git clone https://github.com/wein1m/Made-Yodha-Waradana-Udita_SMK-TI-Global-DPS_BYD-Seal.git byd-seal
 ```
+
+Open the project folder:
+
+```sh
+cd byd-seal
+```
+
+### Option 1 — Open Directly
+
+Open the project folder and double click `index.html` to launch the website in your browser.
+
+### Option 2 — VSCode Live Server (Recommended)
+
+1. Open the project in VSCode
+2. Install the **Live Server** extension
+3. Right click `index.html`
+4. Click **"Open with Live Server"**
+
+The website will automatically open in your browser.
+
+
+
+<p align="center">
+  👻 EOF
+</p>
