@@ -23,6 +23,19 @@ body {
     background-color: #bdb29660;
 }
 
+.skeleton {
+    animation: skeleton-loading 1.5s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: #bdb29696;
+    }
+    100% {
+        background-color: #bdb296;
+    }
+}
+
 .hero {
     position: relative;
     width: 100vw;
@@ -715,7 +728,7 @@ nav.scrolled li {
 
 .interior-design h2,
 .exterior-design h2 {
-    nfont-family: 'Sora', sans-serif;
+    font-family: 'Sora', sans-serif;
     font-weight: 500;
     font-size: 3rem;
     max-width: 30rem;
