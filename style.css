@@ -141,6 +141,10 @@ body {
     margin-left: 0;
 }
 
+.hero-cta:active {
+    opacity: 0.8;
+}
+
 .hero-content .left .bottom {
     position: relative;
     width: 384px;
@@ -313,6 +317,14 @@ body {
     .hero-content .right {
         width: 33.33%;
     }
+
+    .hero-cta:hover::before {
+        max-width: 0;
+    }
+
+    .hero-cta:hover svg {
+        margin-left: -1rem;
+    }
 }
 
 nav {
@@ -339,6 +351,10 @@ nav .logo img {
     height: 20px;
 }
 
+nav .logo:hover {
+    cursor: pointer;
+}
+
 .navs,
 .navs-mobile-hamburg {
     width: fit-content;
@@ -355,6 +371,9 @@ nav .logo img {
     height: 3rem;
 }
 
+.navs-mobile-hamburg .hamburg-btn:hover {
+    cursor: pointer;
+}
 .navs-mobile {
     display: none;
 }
@@ -376,6 +395,19 @@ nav .logo img {
 .navs li:last-child {
     background-color: #060606;
     color: white;
+}
+
+.navs li:last-child::selection {
+    background: none;
+}
+
+.navs li:last-child:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navs li:last-child:active {
+    opacity: 0.6;
 }
 
 nav.scrolled {
@@ -419,6 +451,7 @@ nav.scrolled li {
 }
 
 .navs-mobile ul {
+    width: 100%;
     font-size: 2.75rem;
     letter-spacing: 0.025em;
 }
@@ -429,7 +462,15 @@ nav.scrolled li {
     margin: 0.5rem 0;
 }
 
-.navs-mobile li:first-child::before {
+.navs-mobile li:active {
+    opacity: 0.6;
+}
+
+.navs-mobile li.hovered {
+    margin-left: 1rem;
+}
+
+.navs-mobile li.hovered::before {
     content: "";
     display: inline-block;
     width: 8px;
@@ -437,6 +478,14 @@ nav.scrolled li {
     background-color: #060606;
     border-radius: 999px;
     margin-right: 1rem;
+}
+
+.navs-mobile li:first-child {
+    margin-top: 0;
+}
+
+.navs-mobile li:last-child {
+    margin-bottom: 0;
 }
 
 .navs-mobile .newsletter {
@@ -480,6 +529,15 @@ nav.scrolled li {
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
     width: 100%;
+}
+
+.navs-mobile .newsletter button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navs-mobile .newsletter button:active {
+    opacity: 0.6;
 }
 
 @media (max-width: 480px) {
@@ -564,6 +622,7 @@ nav.scrolled li {
         width: auto;
         height: 2.5rem;
     }
+
     .navs-mobile-hamburg a {
         font-size: 1rem;
         white-space: nowwrap;
@@ -593,7 +652,7 @@ nav.scrolled li {
         font-size: 3.75rem;
     }
 
-    .navs-mobile li:first-child::before {
+    .navs-mobile li.hovered::before {
         width: 12px;
         height: 12px;
     }
@@ -724,6 +783,7 @@ nav.scrolled li {
     margin: 2rem 0;
     display: flex;
     justify-content: space-between;
+    gap: 10rem;
 }
 
 .interior-design h2,
@@ -1254,6 +1314,7 @@ nav.scrolled li {
 .vehicle-cta .content div {
     display: flex;
 }
+
 .vehicle-cta .btn-wrapper {
     width: 200px;
     font-family: "Sora", sans-serif;
@@ -1262,7 +1323,7 @@ nav.scrolled li {
     font-size: 1rem;
     background-color: #060606;
     border: 3px solid #060606;
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
     border-radius: 0.5rem;
     margin: 0 0.25rem;
     display: flex;
@@ -1274,6 +1335,15 @@ nav.scrolled li {
     background-color: white;
     color: #060606;
     border-color: white;
+}
+
+.vehicle-cta .btn-wrapper:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.vehicle-cta .btn-wrapper:active {
+    opacity: 0.6;
 }
 
 @media (max-width: 728px) {
@@ -1368,6 +1438,15 @@ nav.scrolled li {
     font-size: 1rem;
     background-color: black;
     padding: 0.75rem 3.25rem;
+}
+
+.form button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.form button:active {
+    opacity: 0.6;
 }
 
 @media (max-width: 480px) {
