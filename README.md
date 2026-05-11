@@ -15,7 +15,7 @@ Made for Web Design competition hosted by Fasttekno 2026.
 More screenshots of the website are available in [`previews/`](./previews) btw!
 
 ## 🌐 Live Demo
-🐰 [https://byd-seal.netlify.app](https://wein1m.github.io/Made-Yodha-Waradana-Udita_SMK-TI-Global-DPS_BYD-Seal/)
+🐰 [https://byd-seal.netlify.app](https://wein1m.github.io/002_Made-Yodha-Waradana-Udita_BYD-Seal/)
 
 ## Identitas Diri
 - Nama Peserta: Made Yodha Waradana Udita
@@ -50,7 +50,7 @@ More screenshots of the website are available in [`previews/`](./previews) btw!
 Clone the repository:
 
 ```sh
-git clone https://github.com/wein1m/Made-Yodha-Waradana-Udita_SMK-TI-Global-DPS_BYD-Seal.git byd-seal
+git clone https://github.com/wein1m/002_Made-Yodha-Waradana-Udita_BYD-Seal.git byd-seal
 ```
 
 Open the project folder:
