@@ -20,7 +20,7 @@ More screenshots of the website are available in [`previews/`](./previews) btw!
 ## Identitas Diri
 - Nama Peserta: Made Yodha Waradana Udita
 - Asal Sekolah: SMK TI Bali Global Denpasar
-  
+
 
 ## Built With
 
@@ -31,17 +31,24 @@ More screenshots of the website are available in [`previews/`](./previews) btw!
 
 ## Folder Structure
 ```md
+├── README.md
 ├── assets
 │   ├── favicon.ico
 │   ├── images/
 │   └── videos/
 ├── index.html
+├── previews
+│   ├── Previews.pdf
+│   ├── desktop.png
+│   ├── mobile.png
+│   ├── tablet-landscape.png
+│   └── tablet-portrait.png
 ├── reset.css
 ├── scripts
 │   ├── carousel.js
-│   ├── hero-video.js
+│   ├── heroVideo.js
 │   ├── navbar.js
-│   └── smooth_scroll.js
+│   └── scroll.js
 ├── showcase.gif
 └── style.css
 ```
