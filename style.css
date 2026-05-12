@@ -44,7 +44,7 @@ body {
 }
 
 .hero-image {
-    background-image: url("/assets/images/hero.png");
+    background-image: url("/assets/images/hero.webp");
     background-size: cover;
     background-position: center;
     border-radius: 1.5rem;
@@ -188,7 +188,7 @@ body {
 
     .hero-image {
         inset: 0.875rem;
-        background-image: url('/assets/images/hero_mobile.jpeg');
+        background-image: url('/assets/images/hero_mobile.webp');
     }
 
     .hero-image,
@@ -250,7 +250,7 @@ body {
 
 @media (max-width: 728px) and (min-width: 480px) {
     .hero-image {
-        background-image: url('/assets/images/hero_mobile.jpeg');
+        background-image: url('/assets/images/hero_mobile.webp');
     }
 
     .hero-content {
@@ -1291,7 +1291,7 @@ nav.scrolled li {
 }
 
 .vehicle-cta {
-    background-image: url("/assets/images/vehicle-cta-bg.png");
+    background-image: url("/assets/images/vehicle-cta-bg.webp");
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -1363,7 +1363,7 @@ nav.scrolled li {
 
 @media (max-width: 728px) {
     .vehicle-cta {
-        background-image: url("/assets/images/vehicle-cta-bg_mobile.png");
+        background-image: url("/assets/images/vehicle-cta-bg_mobile.webp");
         height: 80vh;
         padding: 0 2rem;
     }

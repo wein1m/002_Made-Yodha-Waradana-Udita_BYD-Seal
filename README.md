@@ -39,10 +39,10 @@ More screenshots of the website are available in [`previews/`](./previews) btw!
 ├── index.html
 ├── previews
 │   ├── Previews.pdf
-│   ├── desktop.png
-│   ├── mobile.png
-│   ├── tablet-landscape.png
-│   └── tablet-portrait.png
+│   ├── desktop.webp
+│   ├── mobile.webp
+│   ├── tablet-landscape.webp
+│   └── tablet-portrait.webp
 ├── reset.css
 ├── scripts
 │   ├── carousel.js
