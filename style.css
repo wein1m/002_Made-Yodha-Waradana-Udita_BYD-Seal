@@ -701,7 +701,7 @@ nav.scrolled li {
 
 @media (max-width: 480px) {
     .about {
-        padding: 2rem;
+        padding: 4rem 2rem;
     }
 
     .about p {
@@ -711,7 +711,7 @@ nav.scrolled li {
 
 @media (max-width: 728px) and (min-width: 480px) {
     .about {
-        padding: 2rem;
+        padding: 5rem 2rem;
     }
 
     .about p {
