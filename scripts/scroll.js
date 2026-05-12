@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function scrollToSection() {
+  const logo = document.querySelector(".logo");
   const containerMobile = document.querySelector(".navs-mobile ul");
   const containerDesktop = document.querySelector(".navs ul");
 
@@ -38,6 +39,13 @@ function scrollToSection() {
     });
 
     isMobile && window.mobileCloseMenu();
+  });
+
+  logo.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 }
 
