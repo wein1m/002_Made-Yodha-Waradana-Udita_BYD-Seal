@@ -44,7 +44,7 @@ body {
 }
 
 .hero-image {
-    background-image: url("/assets/images/hero.webp");
+    background-image: url("./assets/images/hero.webp");
     background-size: cover;
     background-position: center;
     border-radius: 1.5rem;
@@ -250,7 +250,7 @@ body {
 
 @media (max-width: 728px) and (min-width: 480px) {
     .hero-image {
-        background-image: url('/assets/images/hero_mobile.webp');
+        background-image: url('./assets/images/hero_mobile.webp');
     }
 
     .hero-content {
