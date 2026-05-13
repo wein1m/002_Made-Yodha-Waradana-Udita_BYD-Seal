@@ -55,6 +55,9 @@ function smoothScroll() {
   let target = 0;
   const ease = 0.1;
 
+  const isDesktop = () => window.innerWidth >= 768;
+  const smoothing = isDesktop() ? ease : 1;
+
   const setBodyHeight = () => {
     document.body.style.height = container.scrollHeight + "px";
   };
@@ -87,7 +90,7 @@ function smoothScroll() {
   const navHeight = nav.scrollHeight + 100; // 100px offset
 
   const animate = () => {
-    current += (target - current) * ease;
+    current += (target - current) * smoothing;
     container.style.transform = `translateY(${-current}px)`;
 
     current > navHeight
